@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia';
-import { clearToken, setToken } from '@/utils/auth';
-import { removeRouteListener } from '@/utils/route-listener';
+// import { clearToken, setToken } from '@/utils/auth';
+// import { removeRouteListener } from '@/utils/route-listener';
 import { UserState } from './types';
-import useAppStore from '../app';
+// import useAppStore from '../app';
 
 const useUserStore = defineStore('user', {
   state: (): UserState =>
@@ -44,7 +44,7 @@ const useUserStore = defineStore('user', {
 
     // Get user's information
     async info() {
-
+      return undefined;
     },
   },
 });

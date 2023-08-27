@@ -1,7 +1,7 @@
-import {defineStore} from 'pinia';
-import type {RouteRecordNormalized} from 'vue-router';
+import { defineStore } from 'pinia';
+import type { RouteRecordNormalized } from 'vue-router';
 import defaultSettings from '@/config/settings.json';
-import {AppState} from './types';
+import { AppState } from './types';
 
 const useAppStore = defineStore('app', {
   state: (): AppState => ({ ...defaultSettings }),

@@ -18,14 +18,6 @@ export default mergeConfig(
           target: loadedEnv.VITE_RESOURCE_URL ?? 'http://localhost:8888',
           changeOrigin: true,
         },
-        '/resource': {
-          target: loadedEnv.VITE_RESOURCE_URL ?? 'http://localhost:8888',
-          changeOrigin: true,
-        },
-        '/bucket': {
-          target: loadedEnv.VITE_OSS_URL ?? 'http://localhost:9001',
-          changeOrigin: true,
-        },
       },
     },
     plugins: [

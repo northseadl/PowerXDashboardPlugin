@@ -1,11 +1,7 @@
 <template>
-  <router-view />
+  <router-view v-slot="{ Component, route }">
+    <transition name="fade" mode="out-in" appear>
+      <component :is="Component" :key="route.fullPath" />
+    </transition>
+  </router-view>
 </template>
-
-<script lang="ts">
-  export default {
-    name: 'EmptyLayout',
-  };
-</script>
-
-<style scoped lang="less"></style>
