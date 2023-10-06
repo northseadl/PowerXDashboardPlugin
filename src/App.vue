@@ -30,5 +30,8 @@
     if (props.token) {
       setToken(props.token);
     }
+    w.$wujie?.bus.$on('setToken', (arg: any) => {
+      setToken(arg);
+    });
   }
 </script>
