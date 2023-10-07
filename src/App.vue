@@ -27,7 +27,7 @@
   // eslint-disable-next-line no-underscore-dangle
   if (w.__POWERED_BY_WUJIE__) {
     const props = w.$wujie?.props;
-    if (props.token) {
+    if (props?.token !== undefined) {
       setToken(props.token);
     }
     w.$wujie?.bus.$on('setToken', (arg: any) => {
